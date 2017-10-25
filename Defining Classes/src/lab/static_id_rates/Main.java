@@ -1,4 +1,4 @@
-package static_id_rates;
+package lab.static_id_rates;
 
 import java.io.BufferedReader;
 import java.io.IOException;
