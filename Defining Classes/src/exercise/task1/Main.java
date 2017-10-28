@@ -3,29 +3,30 @@ package exercise.task1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
+import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) throws NoSuchMethodException, IOException, IllegalAccessException, InvocationTargetException, InstantiationException {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(isr);
-        Class personClass = Person.class;
 
-        Constructor emptyCtor = personClass.getDeclaredConstructor();
-        Constructor ageCtor = personClass.getDeclaredConstructor(int.class);
-        Constructor nameAgeCtor = personClass.getConstructor(String.class, int.class);
+        TreeMap<String, Person> persons = new TreeMap<>();
 
-        String name = reader.readLine();
-        int age = Integer.parseInt(reader.readLine());
+        int n = Integer.valueOf(reader.readLine());
 
-        Person basePerson = (Person) emptyCtor.newInstance();
-        Person personWithAge = (Person) ageCtor.newInstance(age);
-        Person personFull = (Person) nameAgeCtor.newInstance(name, age);
+        for (int i = 0; i < n; i++) {
+            String[] personalInfo = reader.readLine().split("\\s+");
 
-        System.out.printf("%s %s%n", basePerson.getName(), basePerson.getAge());
-        System.out.printf("%s %s%n", personWithAge.getName(), personWithAge.getAge());
-        System.out.printf("%s %s%n", personFull.getName(), personFull. getAge());
+            if (!persons.containsKey(personalInfo[0])) {
+                Person person = new Person(personalInfo[0], Integer.valueOf(personalInfo[1]));
+                persons.put(personalInfo[0], person);
+            }
+        }
+
+        persons.entrySet().stream()
+                .filter((x) -> x.getValue().getAge() > 30)
+                .forEach(y -> System.out.println(y.getValue()));
     }
 }
