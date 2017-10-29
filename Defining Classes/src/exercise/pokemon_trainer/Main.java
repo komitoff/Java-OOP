@@ -40,6 +40,7 @@ public class Main {
                     if (pokemon.getElement().equals(command)) {
                         flag = true;
                         trainer.getValue().increaseBadges();
+                        break;
                     }
                 }
 
