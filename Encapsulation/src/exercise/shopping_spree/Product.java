@@ -9,6 +9,9 @@ public class Product {
     }
 
     private void setName(String name) {
+        if (name.length() == 0) {
+            throw new IllegalArgumentException("Name cannot be empty");
+        }
         this.name = name;
     }
 
@@ -17,6 +20,9 @@ public class Product {
     }
 
     private void setCost(double cost) {
+        if (cost < 0) {
+            throw new IllegalArgumentException("Cost cannot be negative");
+        }
         this.cost = cost;
     }
 

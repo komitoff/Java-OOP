@@ -8,6 +8,10 @@ public class Person {
     private double money;
     private List<Product> bagOfProducts;
 
+    public List<Product> getBagOfProducts() {
+        return bagOfProducts;
+    }
+
     public String getName() {
         return name;
     }
@@ -41,17 +45,8 @@ public class Person {
             System.out.println(String.format("%s can't afford %s", this.getName(), product.getName()));
             return;
         }
+        System.out.println(String.format("%s bought %s", this.getName(), product.getName()));
+        this.setMoney(this.getMoney() - product.getCost());
         this.bagOfProducts.add(product);
-    }
-
-    public void boughtProducts() {
-        if (this.bagOfProducts.size() == 0) {
-            System.out.println(this.getName() + " - Nothing bought");
-            return;
-        }
-
-        for (int i = 0; i < this.bagOfProducts.size(); i++) {
-            System.out.println(String.format("%s bought %s", this.getName(), this.bagOfProducts.get(i).getName()));
-        }
     }
 }
