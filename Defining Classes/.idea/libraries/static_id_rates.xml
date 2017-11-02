@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="static_id_rates">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lab/static_id_rates.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

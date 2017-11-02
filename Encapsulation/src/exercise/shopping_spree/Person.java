@@ -48,5 +48,6 @@ public class Person {
         System.out.println(String.format("%s bought %s", this.getName(), product.getName()));
         this.setMoney(this.getMoney() - product.getCost());
         this.bagOfProducts.add(product);
+        System.out.println("asd");
     }
 }

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sort_people1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lab/sort_people.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
