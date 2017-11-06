@@ -1,9 +1,11 @@
 package exercise.vehicles;
 
-public class Car extends Vehicle {
+import exercise.vehicles.exceptions.TruckNotEnoughFuelException;
 
-    public Car (double fuelQuantity, double fuelConsumption, double tankCapacity) {
-        super(fuelQuantity, fuelConsumption + 0.9, fuelQuantity);
+public class Bus extends Vehicle {
+
+    public Bus (double fuelQuantity, double fuelConsumption, double tankCapacity) {
+        super(fuelQuantity, fuelConsumption, tankCapacity);
     }
 
     @Override
@@ -21,7 +23,7 @@ public class Car extends Vehicle {
     public void drive(double kilometers) throws IllegalArgumentException {
         double totalKilometersCanDrive = super.getFuelQuantity() / super.getFuelConsumption();
         if (kilometers >= totalKilometersCanDrive) {
-            throw new IllegalArgumentException("Car needs refueling");
+            throw new IllegalArgumentException("Bus needs refueling");
         }
         double littersLeft = super.getFuelQuantity() - (kilometers * super.getFuelConsumption());
         super.setFuelQuantity(littersLeft);
