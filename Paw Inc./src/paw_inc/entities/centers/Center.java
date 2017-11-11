@@ -33,4 +33,6 @@ public abstract class Center {
         this.setName(name);
         this.storedAnimals = new ArrayList<>();
     }
+
+
 }

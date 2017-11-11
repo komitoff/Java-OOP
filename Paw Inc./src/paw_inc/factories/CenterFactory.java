@@ -1,6 +1,7 @@
 package paw_inc.factories;
 
 import paw_inc.entities.centers.AdoptionCenter;
+import paw_inc.entities.centers.CastrationCenter;
 import paw_inc.entities.centers.Center;
 import paw_inc.entities.centers.CleansingCenter;
 
@@ -18,6 +19,8 @@ public class CenterFactory {
                 return new CleansingCenter(name);
             case "AdoptionCenter":
                 return new AdoptionCenter(name);
+            case "CastrationCenter":
+                return new CastrationCenter(name);
             default:
                 return null;
         }

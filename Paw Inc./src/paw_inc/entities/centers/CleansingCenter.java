@@ -1,6 +1,9 @@
 package paw_inc.entities.centers;
 
+import paw_inc.entities.animals.Animal;
+
 import java.util.HashMap;
+import java.util.List;
 
 public class CleansingCenter extends Center{
 
@@ -9,4 +12,5 @@ public class CleansingCenter extends Center{
     public CleansingCenter(String name) {
         super(name);
     }
+
 }

@@ -9,7 +9,7 @@ public abstract class Animal {
         return cleansingStatus;
     }
 
-    protected void setCleansingStatus(boolean cleansingStatus) {
+    public void setCleansingStatus(boolean cleansingStatus) {
         this.cleansingStatus = cleansingStatus;
     }
 
@@ -34,4 +34,6 @@ public abstract class Animal {
         this.setAge(age);
         this.setCleansingStatus(false);
     }
+
+
 }
