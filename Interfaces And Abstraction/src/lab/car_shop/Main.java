@@ -1,0 +1,26 @@
+package lab.car_shop;
+
+import lab.car_shop.api.Car;
+import lab.car_shop.api.Rentable;
+import lab.car_shop.api.Sellable;
+import lab.car_shop.cars.Audi;
+import lab.car_shop.cars.Seat;
+
+public class Main {
+    public static void main(String[] args) {
+        Sellable seat = new Seat("Leon", "Gray", 110, "Spain", 11111.1);
+        Rentable audi = new Audi("Leon", "Gray", 110, "Spain", 3, 99.9);
+
+        printCarInfo(seat);
+        printCarInfo(audi);
+    }
+
+    private static void printCarInfo(Car car) {
+        System.out.println(String.format(
+                "%s is %s color and have %s horse power",
+                car.getModel(),
+                car.getColor(),
+                car.getHorsePower()));
+        System.out.println(car.toString());
+    }
+}
