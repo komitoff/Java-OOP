@@ -5,7 +5,7 @@ public class Main {
         Jar<Pickle> pickles = new Jar<>();
         pickles.add(new Pickle());
         pickles.add(new Pickle());
-        
+
         Pickle pickle = pickles.remove();
     }
 }
