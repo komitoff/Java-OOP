@@ -1,59 +1,81 @@
 package lab.car_shop.cars;
 
+import lab.car_shop.api.Car;
 import lab.car_shop.api.Rentable;
 
 public class Audi implements Rentable {
-
-    private Integer minRentDay;
-    private double pricePerDay;
     private String model;
     private String color;
-    private Integer horsePower;
-    private String countryProduced;
+    private int horsePower;
+    private String countryProducer;
+    private int minRentDay;
+    private double pricePerDay;
 
-    public Audi(String model, String color, Integer horsePower,
-                String countryProduced, int minRentDay, double pricePerDay) {
+    public Audi(String model, String color, Integer horsePower, String countryProducer, Integer minRentDay, Double pricePerDay) {
+        this.setModel(model);
+        this.setColor(color);
+        this.setHorsePower(horsePower);
+        this.setCountryProducer(countryProducer);
+        this.setMinRentDay(minRentDay);
+        this.setPricePerDay(pricePerDay);
+    }
+
+    private void setModel(String model) {
         this.model = model;
+    }
+
+    private void setColor(String color) {
         this.color = color;
+    }
+
+    private void setHorsePower(int horsePower) {
         this.horsePower = horsePower;
-        this.countryProduced = countryProduced;
+    }
+
+    private void setCountryProducer(String countryProducer) {
+        this.countryProducer = countryProducer;
+    }
+
+    private void setMinRentDay(int minRentDay) {
         this.minRentDay = minRentDay;
+    }
+
+    private void setPricePerDay(double pricePerDay) {
         this.pricePerDay = pricePerDay;
     }
 
-    @Override
-    public Integer getMinRentDay() {
-        return minRentDay;
-    }
-
-    @Override
-    public double getPricePerDay() {
-        return pricePerDay;
-    }
-
-    @Override
-    public String getCountryProduced() {
-        return countryProduced;
+    public String getCountryProducer() {
+        return this.countryProducer;
     }
 
     @Override
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     @Override
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     @Override
-    public Integer getHorsePower() {
-        return horsePower;
+    public int getHorsePower() {
+        return this.horsePower;
+    }
+
+    @Override
+    public int getMinRentDay() {
+        return this.minRentDay;
+    }
+
+    @Override
+    public Double getPricePerDay() {
+        return this.pricePerDay;
     }
 
     @Override
     public String toString() {
-        return String.format("This is %s produced and have %d tires",
-                model, TYRES);
+        return String.format("This is %s produced in %s and have %d tires",
+                this.getModel(), this.getCountryProducer(), Car.TYRES);
     }
 }

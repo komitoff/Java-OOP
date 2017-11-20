@@ -1,13 +1,17 @@
 package say_hello.hello;
 
-public class Bulgarian extends BasePerson {
+public class Bulgarian extends BasePerson implements Person {
 
-    public Bulgarian(String name) {
+    private static final String GREETING = "Здравей";
+    private String name;
+
+    Bulgarian(String name) {
         super(name);
     }
 
     @Override
     public String sayHello() {
-        return "Здравей";
+        return GREETING;
     }
+
 }
