@@ -3,10 +3,7 @@ package lab.car_shop.api;
 import lab.car_shop.api.Car;
 
 public interface Rentable extends Car {
-    Integer minRentDays = 0;
-    double pricePerDay = 0;
+    int getMinRentDay();
 
-    Integer getMinRentDay();
-    double getPricePerDay();
-
+    Double getPricePerDay();
 }

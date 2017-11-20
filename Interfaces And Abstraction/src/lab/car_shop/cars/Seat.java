@@ -1,16 +1,17 @@
 package lab.car_shop.cars;
-
+import lab.car_shop.api.Car;
 import lab.car_shop.api.Sellable;
 
-public class Seat implements Sellable {
+import java.io.Serializable;
 
+public class Seat implements Sellable, Car, Serializable {
     private String model;
     private String color;
-    private Integer horsePower;
+    private int horsePower;
     private String countryProduced;
     private double price;
 
-    public Seat(String model, String color, Integer horsePower, String countryProduced, double price) {
+    public Seat(String model, String color, Integer horsePower, String countryProduced, Double price) {
         this.model = model;
         this.color = color;
         this.horsePower = horsePower;
@@ -18,34 +19,29 @@ public class Seat implements Sellable {
         this.price = price;
     }
 
-    @Override
     public String getCountryProduced() {
         return countryProduced;
     }
 
-    @Override
     public String getModel() {
-        return model;
+        return this.model;
     }
 
-    @Override
     public String getColor() {
-        return color;
+        return this.color;
     }
 
-    @Override
-    public Integer getHorsePower() {
+    public int getHorsePower() {
         return horsePower;
     }
 
     @Override
-    public Double getPrice() {
-        return price;
+    public String toString() {
+        return "This is " + this.getModel() + " produced in " + this.getCountryProduced() + " and have " + Car.TYRES + " tires";
     }
 
     @Override
-    public String toString() {
-        return String.format("This is %s produced in %s and have %d tires",
-                model, countryProduced, TYRES);
+    public double getPrice() {
+        return this.price;
     }
 }

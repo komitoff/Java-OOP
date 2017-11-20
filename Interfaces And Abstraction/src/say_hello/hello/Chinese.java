@@ -1,13 +1,17 @@
 package say_hello.hello;
 
-public class Chinese extends BasePerson {
+public class Chinese extends BasePerson   implements Person{
 
-    public Chinese(String name) {
+    private static final String GREETING = "Djydjybydjy";
+    private String name;
+
+    Chinese(String name) {
         super(name);
     }
 
     @Override
     public String sayHello() {
-        return "Djydjybydjy";
+        return GREETING;
     }
+
 }
