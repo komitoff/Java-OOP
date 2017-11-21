@@ -42,9 +42,10 @@ public class CommandParser<T extends Comparable> {
                 System.out.println(elements.getMin());
                 break;
             case "Print":
-                for (int i = 0; i < elements.getSize(); i++) {
-                    System.out.println(elements.get(i));
-                }
+                elements.forEach(System.out::println);
+                break;
+            case "Sort":
+                elements.sort();
                 break;
             default: break;
         }

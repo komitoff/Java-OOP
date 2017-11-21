@@ -1,10 +1,9 @@
 package custom_list.util_list;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.function.Consumer;
 
-public class CustomListImpl<T extends Comparable> {
+public class CustomListImpl<T extends Comparable> implements Iterable{
 
     private List<T> innerList;
 
@@ -53,5 +52,26 @@ public class CustomListImpl<T extends Comparable> {
 
     public T get(int index) {
         return innerList.get(index);
+    }
+
+    public void sort() {
+        Collections.sort(innerList, (x, y)-> x.compareTo(y));
+    }
+
+    @Override
+    public Iterator iterator() {
+        return null;
+    }
+
+    @Override
+    public void forEach(Consumer action) {
+        for (int i = 0; i < innerList.size(); i++) {
+            action.accept(innerList.get(i));
+        }
+    }
+
+    @Override
+    public Spliterator spliterator() {
+        return null;
     }
 }
