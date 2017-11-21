@@ -7,7 +7,7 @@ public class Box<T extends Comparable> {
 
     private List<T> elements;
 
-    public Box(T element) {
+    public Box() {
         elements = new ArrayList<>();
     }
 
@@ -15,7 +15,7 @@ public class Box<T extends Comparable> {
         elements.add(element);
     }
 
-    public <T extends Comparable> int countGraterThan(T element) {
+    public <T extends Number> int countGraterThan(T element) {
         int count = 0;
 
         for (int i = 0; i < elements.size(); i++) {

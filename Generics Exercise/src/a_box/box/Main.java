@@ -8,21 +8,38 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int len = Integer.valueOf(scanner.nextLine());
-        Box<String> box = new Box<>();
+
+        List<Double> ints = new ArrayList<>();
 
         for (int i = 0; i < len; i++) {
-            String input = scanner.nextLine();
-            Box box = new Box(input);
-            boxList.add(box);
+            ints.add(Double.valueOf(scanner.nextLine()));
         }
-        String line = scanner.nextLine();
 
+        int count = 0;
+        Double last = Double.valueOf(scanner.nextLine());
 
-//        int[] tokens = Arrays.stream(scanner.nextLine().split(" "))
-//                .mapToInt(Integer::valueOf)
-//                .toArray();
-//        swap(tokens[0], tokens[1], boxList);
-//        boxList.forEach(System.out::println);
+        for (Double num : ints) {
+            if (num > last) {
+                count ++;
+            }
+        }
+
+        System.out.println(count);
+//        Box<String> box = new Box<>();
+//
+//        for (int i = 0; i < len; i++) {
+//            String input = scanner.nextLine();
+//            box.add(input);
+//        }
+////        String line = scanner.nextLine();
+//////        int count = box.countGraterThan(line);
+////        System.out.println(count);
+//
+////        int[] tokens = Arrays.stream(scanner.nextLine().split(" "))
+////                .mapToInt(Integer::valueOf)
+////                .toArray();
+////        swap(tokens[0], tokens[1], boxList);
+////        boxList.forEach(System.out::println);
     }
 
     private static <T> void swap(int firstIndex, int secondIndex, List<T> boxList) {
