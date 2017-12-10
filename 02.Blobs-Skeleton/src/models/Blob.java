@@ -1,23 +1,25 @@
 package models;
 
+import interfaces.Attack;
+import interfaces.Behavior;
 import models.attacks.AbstractAttack;
 import models.attacks.PutridFart;
-import models.behavors.AbstractBehavior;
-import models.behavors.Aggressive;
+import models.behaviors.AbstractBehavior;
+import models.behaviors.Aggressive;
 
 public class Blob {
 
     private String name;
     private int currentHealth;
     private int damage;
-    private AbstractBehavior behavior;
-    private AbstractAttack attack;
+    private Behavior behavior;
+    private Attack attack;
     private int triggerCount;
 
     private int initialHealth;
     private int initialDamage;
 
-    public Blob(String name, int health, int damage, AbstractBehavior behavior, AbstractAttack attack) {
+    public Blob(String name, int health, int damage, Behavior behavior, Attack attack) {
         this.name = name;
         this.currentHealth = health;
         this.damage = damage;
@@ -32,7 +34,7 @@ public class Blob {
         return this.currentHealth;
     }
 
-    public void setHealth(int health) {
+    private void setHealth(int health) {
         this.currentHealth = health;
 
         if (this.currentHealth < 0) {
@@ -73,7 +75,7 @@ public class Blob {
         }
     }
 
-    public AbstractBehavior getBehavior() {
+    public Behavior getBehavior() {
         return this.behavior;
     }
 

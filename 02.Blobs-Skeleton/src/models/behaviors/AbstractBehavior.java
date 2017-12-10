@@ -1,4 +1,4 @@
-package models.behavors;
+package models.behaviors;
 
 import interfaces.Behavior;
 import models.Blob;
