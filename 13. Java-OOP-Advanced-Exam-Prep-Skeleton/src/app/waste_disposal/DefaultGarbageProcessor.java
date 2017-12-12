@@ -6,19 +6,15 @@ import app.waste_disposal.contracts.*;
 import java.lang.annotation.Annotation;
 
 public class DefaultGarbageProcessor implements GarbageProcessor {
-    private DefaultStrategyHolder strategyHolder;
+    private StrategyHolder strategyHolder;
 
-    public DefaultGarbageProcessor(DefaultStrategyHolder strategyHolder){
-        this.setStrategyHolder(strategyHolder);
+    public DefaultGarbageProcessor(StrategyHolder strategyHolder){
+        this.strategyHolder =  strategyHolder;
     }
-
-    public DefaultGarbageProcessor(){
-        this(new DefaultStrategyHolder());
-    }
-
-    private void setStrategyHolder(DefaultStrategyHolder strategyHolder) {
-        this.strategyHolder = strategyHolder;
-    }
+// TODO check this constructor
+//    public DefaultGarbageProcessor(){
+//        this(new DefaultStrategyHolder());
+//    }
 
     @Override
     public StrategyHolder getStrategyHolder() {
