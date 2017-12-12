@@ -1,7 +1,7 @@
 package interfaces;
 
-import models.Blob;
+import models.BlobImpl;
 
 public interface Attack {
-    void execute(Blob source, Blob target);
+    void execute(BlobImpl source, BlobImpl target);
 }

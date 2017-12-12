@@ -1,10 +1,10 @@
 package models.attacks;
 
-import models.Blob;
+import models.BlobImpl;
 
 public class PutridFart extends AbstractAttack {
 
-    public void execute(Blob source, Blob target) {
+    public void execute(BlobImpl source, BlobImpl target) {
         target.respond(source.getDamage());
     }
 }

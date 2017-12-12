@@ -1,7 +1,7 @@
 package models.behaviors;
 
 import interfaces.Behavior;
-import models.Blob;
+import models.BlobImpl;
 
 public abstract class AbstractBehavior implements Behavior {
 
@@ -28,7 +28,7 @@ public abstract class AbstractBehavior implements Behavior {
         this.toDelayRecurrentEffect = toDelayRecurrentEffect;
     }
 
-    public abstract void trigger(Blob source);
+    public abstract void trigger(BlobImpl source);
 
-    public abstract void applyRecurrentEffect(Blob source);
+    public abstract void applyRecurrentEffect(BlobImpl source);
 }
