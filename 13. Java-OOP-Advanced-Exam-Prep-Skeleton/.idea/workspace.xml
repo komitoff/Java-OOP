@@ -15,8 +15,8 @@
       <file leaf-file-name="RecyclableGarbage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/models/garbages/RecyclableGarbage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="126">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#330#331#0" expanded="true" />
@@ -38,53 +38,18 @@
         <entry file="file://$PROJECT_DIR$/src/app/models/garbages/StorableGarbage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
-              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-              <folding>
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractGarbage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/models/garbages/AbstractGarbage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessingData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/contracts/ProcessingData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GarbageProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/contracts/GarbageProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -92,9 +57,55 @@
       <file leaf-file-name="DefaultGarbageProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/DefaultGarbageProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
+            <state relative-caret-position="-90">
               <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="64" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultStrategyHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/DefaultStrategyHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Burnable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Burnable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recyclable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Recyclable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Storable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Storable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,17 +113,17 @@
       <file leaf-file-name="BurnableGarbage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/models/garbages/BurnableGarbage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="27">
+              <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
               <folding>
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +132,18 @@
       <file leaf-file-name="Disposable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Disposable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="72">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessingDataImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/models/processings/ProcessingDataImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,6 +156,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -148,13 +170,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/app/waste_disposal/contracts/Runnable.java" />
         <option value="$PROJECT_DIR$/src/app/models/strategies/GarbageDisposalStrategyImpl.java" />
-        <option value="$PROJECT_DIR$/src/app/models/processings/ProcessingDataImpl.java" />
         <option value="$PROJECT_DIR$/src/app/waste_disposal/DefaultGarbageProcessor.java" />
-        <option value="$PROJECT_DIR$/src/app/waste_disposal/annotations/Disposable.java" />
         <option value="$PROJECT_DIR$/src/app/models/garbages/AbstractGarbage.java" />
+        <option value="$PROJECT_DIR$/src/app/waste_disposal/annotations/Burnable.java" />
+        <option value="$PROJECT_DIR$/src/app/waste_disposal/annotations/Disposable.java" />
         <option value="$PROJECT_DIR$/src/app/models/garbages/RecyclableGarbage.java" />
-        <option value="$PROJECT_DIR$/src/app/models/garbages/StorableGarbage.java" />
         <option value="$PROJECT_DIR$/src/app/models/garbages/BurnableGarbage.java" />
+        <option value="$PROJECT_DIR$/src/app/waste_disposal/annotations/Recyclable.java" />
+        <option value="$PROJECT_DIR$/src/app/waste_disposal/annotations/Storable.java" />
+        <option value="$PROJECT_DIR$/src/app/models/garbages/StorableGarbage.java" />
+        <option value="$PROJECT_DIR$/src/app/models/processings/ProcessingDataImpl.java" />
       </list>
     </option>
   </component>
@@ -207,6 +232,22 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="garbages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="13. Java-OOP-Advanced-Exam-Prep-Skeleton" type="b2602c69:ProjectViewProjectNode" />
+              <item name="13. Java-OOP-Advanced-Exam-Prep-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="processings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="13. Java-OOP-Advanced-Exam-Prep-Skeleton" type="b2602c69:ProjectViewProjectNode" />
+              <item name="13. Java-OOP-Advanced-Exam-Prep-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="strategies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="13. Java-OOP-Advanced-Exam-Prep-Skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -427,34 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/models/processings/ProcessingDataImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/DefaultStrategyHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/contracts/StrategyHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Disposable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -475,35 +492,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/models/garbages/AbstractGarbage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/DefaultGarbageProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
+        <state relative-caret-position="-90">
           <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/DefaultStrategyHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/models/garbages/BurnableGarbage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="27">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
           <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Burnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Recyclable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Storable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/models/garbages/RecyclableGarbage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
@@ -523,31 +592,34 @@
     <entry file="file://$PROJECT_DIR$/src/app/models/garbages/StorableGarbage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/models/garbages/AbstractGarbage.java">
+    <entry file="file://$PROJECT_DIR$/src/app/waste_disposal/annotations/Disposable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/models/processings/ProcessingDataImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,9 @@
 package app.models.garbages;
 
 import app.waste_disposal.annotations.Disposable;
+import app.waste_disposal.annotations.Storable;
 
-@Disposable
+@Storable
 public class StorableGarbage extends AbstractGarbage {
 
     public StorableGarbage(String name, double weight, double volumePerKg) {

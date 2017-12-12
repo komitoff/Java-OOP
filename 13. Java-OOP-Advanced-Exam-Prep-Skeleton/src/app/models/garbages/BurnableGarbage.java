@@ -1,8 +1,8 @@
 package app.models.garbages;
 
-import app.waste_disposal.annotations.Disposable;
+import app.waste_disposal.annotations.Burnable;
 
-@Disposable
+@Burnable
 public class BurnableGarbage extends AbstractGarbage {
 
     public BurnableGarbage(String name, double weight, double volumePerKg) {

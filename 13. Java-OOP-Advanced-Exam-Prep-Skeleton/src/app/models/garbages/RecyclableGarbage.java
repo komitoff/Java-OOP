@@ -1,10 +1,10 @@
 package app.models.garbages;
 
 import app.models.processings.ProcessingDataImpl;
-import app.waste_disposal.annotations.Disposable;
+import app.waste_disposal.annotations.Recyclable;
 import app.waste_disposal.contracts.ProcessingData;
 
-@Disposable
+@Recyclable
 public class RecyclableGarbage extends AbstractGarbage {
 
     public RecyclableGarbage(String name, double weight, double volumePerKg) {

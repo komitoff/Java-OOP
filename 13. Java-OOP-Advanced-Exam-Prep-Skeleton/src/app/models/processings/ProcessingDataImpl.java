@@ -2,6 +2,7 @@ package app.models.processings;
 
 import app.waste_disposal.contracts.ProcessingData;
 
+
 public class ProcessingDataImpl implements ProcessingData {
 
     private double energyBalance;
