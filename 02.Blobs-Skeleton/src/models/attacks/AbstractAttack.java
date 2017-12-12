@@ -1,8 +1,8 @@
 package models.attacks;
 
 import interfaces.Attack;
-import models.Blob;
+import models.BlobImpl;
 
 public abstract class AbstractAttack implements Attack {
-    public abstract void execute(Blob attacker, Blob target);
+    public abstract void execute(BlobImpl attacker, BlobImpl target);
 }

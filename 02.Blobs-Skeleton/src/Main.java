@@ -1,17 +1,16 @@
-import models.Blob;
-import models.attacks.PutridFart;
-import models.behaviors.Aggressive;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import engines.Engine;
+import interfaces.*;
+import io.ConsoleReader;
+import io.ConsoleWriter;
+import repositories.BlobRepository;
 
 public class Main {
     public static void main(String[] args) {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        InputReader reader = new ConsoleReader();
+        OutputWriter writer = new ConsoleWriter();
+        Repository<Blob> blobRepository = new BlobRepository();
+        Runnable engine = new Engine();
 
-
-        Blob blob = new Blob("Ivan", 25, 25, new Aggressive(), new PutridFart());
-
-        System.out.println(blob);
+        engine.run();
     }
 }

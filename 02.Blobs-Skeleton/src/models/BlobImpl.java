@@ -2,12 +2,11 @@ package models;
 
 import interfaces.Attack;
 import interfaces.Behavior;
-import models.attacks.AbstractAttack;
+import interfaces.Blob;
 import models.attacks.PutridFart;
-import models.behaviors.AbstractBehavior;
 import models.behaviors.Aggressive;
 
-public class Blob {
+public class BlobImpl implements Blob{
 
     private String name;
     private int currentHealth;
@@ -19,7 +18,7 @@ public class Blob {
     private int initialHealth;
     private int initialDamage;
 
-    public Blob(String name, int health, int damage, Behavior behavior, Attack attack) {
+    public BlobImpl(String name, int health, int damage, Behavior behavior, Attack attack) {
         this.name = name;
         this.currentHealth = health;
         this.damage = damage;
@@ -30,6 +29,7 @@ public class Blob {
         this.initialDamage = damage;
     }
 
+    @Override
     public int getHealth() {
         return this.currentHealth;
     }
@@ -54,7 +54,7 @@ public class Blob {
         this.damage = currentDamage;
     }
 
-    public void attack(Blob target) {
+    public void attack(BlobImpl target) {
         if (this.attack instanceof PutridFart) {
             this.attackAffectTarget(this, target);
         }
@@ -79,6 +79,7 @@ public class Blob {
         return this.behavior;
     }
 
+    @Override
     public String getName() {
         return this.name;
     }
@@ -103,11 +104,11 @@ public class Blob {
         return String.format("IBlob %s: %s HP, %s Damage", this.getName(), this.getHealth(), this.getDamage());
     }
 
-    private void attackAffectSource(Blob source) {
+    private void attackAffectSource(BlobImpl source) {
         source.setHealth(source.getHealth() - source.getHealth() / 2);
     }
 
-    private void attackAffectTarget(Blob source, Blob target) {
+    private void attackAffectTarget(BlobImpl source, BlobImpl target) {
         target.respond(source.getDamage() * 2);
     }
 

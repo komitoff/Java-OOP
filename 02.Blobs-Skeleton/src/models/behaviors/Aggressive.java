@@ -1,6 +1,6 @@
 package models.behaviors;
 
-import models.Blob;
+import models.BlobImpl;
 
 public class Aggressive extends AbstractBehavior {
 
@@ -13,13 +13,13 @@ public class Aggressive extends AbstractBehavior {
         super();
     }
 
-    public void trigger(Blob source) {
+    public void trigger(BlobImpl source) {
         this.sourceInitialDamage = source.getDamage();
         super.setIsTriggered(true);
         this.applyTriggerEffect(source);
     }
 
-    public void applyRecurrentEffect(Blob source) {
+    public void applyRecurrentEffect(BlobImpl source) {
         if (super.toDelayRecurrentEffect()) {
             super.setToDelayRecurrentEffect(false);
         } else {
@@ -39,7 +39,7 @@ public class Aggressive extends AbstractBehavior {
         super.toDelayRecurrentEffect = toDelayRecurrentEffect;
     }
 
-    private void applyTriggerEffect(Blob source) {
+    private void applyTriggerEffect(BlobImpl source) {
         source.setDamage(source.getDamage() * AGGRESSIVE_DAMAGE_MULTIPLY);
     }
 }
