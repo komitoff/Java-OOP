@@ -6,7 +6,7 @@ public interface Reactor extends Identifiable {
 
     long getTotalHeatAbsorbing();
 
-    int getModuleCount();
+    int getModuleCount() throws IllegalAccessException;
 
     void addEnergyModule(EnergyModule energyModule);
 
