@@ -80,4 +80,22 @@ public abstract class AbstractHero implements Hero {
     public void addRecipe(Recipe recipe) {
         this.inventory.addRecipeItem(recipe);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("Hero: %s, Class: %s", this.name, this.getClass().getSimpleName()))
+                .append(System.lineSeparator())
+                .append(String.format("HitPoints: %d, Damage: %d", this.hitPoints, this.damage))
+                .append(System.lineSeparator())
+                .append(String.format("Strength: %d", this.strength))
+                .append(System.lineSeparator())
+                .append(String.format("Agility: %d", this.agility))
+                .append(System.lineSeparator())
+                .append(String.format("Intelligence: %d", this.intelligence))
+                .append(System.lineSeparator())
+                .append(String.format("Items:"))
+                .append(System.lineSeparator());
+        return sb.toString();
+    }
 }

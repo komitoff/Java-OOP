@@ -11,4 +11,6 @@ public class Assassin extends AbstractHero {
                 Constants.ASSASSIN_INITIAL_HIT_POINTS,
                 Constants.ASSASSIN_INITIAL_DAMAGE);
     }
+
+
 }
