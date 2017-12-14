@@ -57,7 +57,7 @@ public class HeroInventory implements Inventory {
 
     private void checkRecipes() {
         for (Recipe recipe : this.recipeItems.values()) {
-            List<String> requiredItems = new ArrayList<String>(recipe.getRequiredItems());
+            List<String> requiredItems = new ArrayList<>(recipe.getRequiredItems());
 
             for (Item item : this.commonItems.values()) {
                 if (requiredItems.contains(item.getName())) {

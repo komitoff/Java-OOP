@@ -27,9 +27,9 @@ public interface Hero {
 
     long getDamage();
 
-    Collection<Item> getItems();
+    Collection<Item> getItems() throws IllegalAccessException;
 
-    void addItem(Item item);
+    void addItem(Item item) throws IllegalAccessException;
 
     void addRecipe(Recipe recipe);
 }
