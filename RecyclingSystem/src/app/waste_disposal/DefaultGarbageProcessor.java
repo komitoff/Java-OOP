@@ -6,18 +6,14 @@ import app.waste_disposal.contracts.*;
 import java.lang.annotation.Annotation;
 
 public class DefaultGarbageProcessor implements GarbageProcessor {
-    private DefaultStrategyHolder strategyHolder;
+    private StrategyHolder strategyHolder;
 
-    public DefaultGarbageProcessor(DefaultStrategyHolder strategyHolder){
-        this.setStrategyHolder(strategyHolder);
+    public DefaultGarbageProcessor(StrategyHolder strategyHolder){
+        this.strategyHolder = strategyHolder;
     }
 
     public DefaultGarbageProcessor(){
         this(new DefaultStrategyHolder());
-    }
-
-    private void setStrategyHolder(DefaultStrategyHolder strategyHolder) {
-        this.strategyHolder = strategyHolder;
     }
 
     @Override
@@ -26,7 +22,7 @@ public class DefaultGarbageProcessor implements GarbageProcessor {
     }
 
     @Override
-    public ProcessingData processWaste(Waste garbage) {
+    public ProcessingData processWaste(Waste garbage) throws IllegalArgumentException {
         Class type = garbage.getClass();
         Annotation[] garbageAnnotations = type.getAnnotations();
         Class disposableAnnotation = null;
@@ -38,7 +34,8 @@ public class DefaultGarbageProcessor implements GarbageProcessor {
         }
 
         GarbageDisposalStrategy currentStrategy;
-        if (disposableAnnotation == null || !this.getStrategyHolder().getDisposalStrategies().containsKey(disposableAnnotation))
+        if (disposableAnnotation == null ||
+                !this.getStrategyHolder().getDisposalStrategies().containsKey(disposableAnnotation))
         {
             throw new IllegalArgumentException(
                     "The passed in garbage does not implement an annotation implementing the Disposable meta-annotation or is not supported by the StrategyHolder.");

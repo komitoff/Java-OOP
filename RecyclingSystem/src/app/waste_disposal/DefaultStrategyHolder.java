@@ -9,7 +9,7 @@ import java.util.Map;
 
 class DefaultStrategyHolder implements StrategyHolder {
 
-    LinkedHashMap<Class,GarbageDisposalStrategy> strategies;
+    Map<Class,GarbageDisposalStrategy> strategies;
 
     public DefaultStrategyHolder(){
         this.strategies = new LinkedHashMap<>();
